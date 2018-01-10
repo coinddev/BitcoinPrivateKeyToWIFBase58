@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-networkBytes=80
+networkBytes=CC
 privateKey=`echo -ne ${networkBytes}${1}`
 privateKeyAsHex=$(echo -ne ${privateKey} |  sed -e 's/../\\x&/g')
 echo "Network private key: ${privateKey}"
